@@ -1,0 +1,212 @@
+
+   .pd-project-details-container {
+    font-family: "Poppins", sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .pd-hero {
+    text-align: center;
+  }
+  
+  .pd-hero h1 {
+    font-size: 27px;
+    color: #0f172a;
+  }
+  
+  .pd-hero p {
+    font-size: 1.2rem;
+    color: #475569;
+    margin-bottom: 30px;
+  }
+  
+  .pd-hero-image {
+    margin-top: 2rem;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+  }
+  
+  .pd-hero-image:hover {
+    transform: scale(1.02);
+  }
+  
+  /* ===== Section Titles ===== */
+  section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0f172a;
+    border-left: 5px solid #4f46e5;
+    padding-left: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* ===== About Section ===== */
+  .pd-about {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  .section-for-both {
+    display: flex;
+    gap: 3rem; 
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .pd-features {
+    flex: 0 0 65%; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .pd-features h1{
+    font-size: 1.8rem;
+    color: #1e1e2f;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+ 
+  .pd-features ul {
+    list-style: none;
+    padding-left: 20px;
+    line-height: 1.6;
+  }
+  
+  .pd-features li {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  
+  /* ===== Tech Stack Tags ===== */
+  .pd-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  
+  .pd-tech-tags span {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .pd-tech-stack {
+    flex: 0 0 30%; 
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  /* ===== Gallery ===== */
+  .pd-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  
+  .pd-gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .pd-gallery-grid img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* ===== Links & Buttons ===== */
+  .pd-links {
+    display: flex;
+    align-items: center; /* vertically center heading and buttons */
+    justify-content: space-between; /* heading on left, buttons on right */
+    flex-wrap: wrap; /* wrap on small screens */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    gap: 1rem; /* spacing if wrapping occurs */
+  }
+  
+  .pd-links h2 {
+    font-size: 1.8rem;
+    color: #1e1e2f;
+    margin: 0; /* remove default margin */
+  }
+  
+  .pd-buttons {
+    display: flex;
+    width: 35%;
+    gap: 10%; /* spacing between the buttons */
+    flex-wrap: wrap;
+  }
+  
+  .pd-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* gap between text and icon */
+    text-decoration: none;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .pd-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  .pd-btn svg {
+    font-size: 0.9rem;
+  }
+  
+  
+  .future{
+    text-align: center;
+    margin-top: 20px;
+    /* width: fit-content; */
+  }
+  
+  /* ===== Back Link ===== */
+  .pd-back-link-section {
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .pd-back-link {
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .pd-back-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .pd-hero h1 {
+      font-size: 2rem;
+    }
+    .pd-hero p {
+      font-size: 1rem;
+    }
+  }
+  

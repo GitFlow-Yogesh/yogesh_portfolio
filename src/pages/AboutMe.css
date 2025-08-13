@@ -1,0 +1,155 @@
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.abt-h {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #1e1e2f;
+}
+
+/* Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Contact & Education Rows */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.contact-row div {
+  flex: 1 1 1 200px; 
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: left;
+  min-width: 0;
+}
+
+.contact-row div:last-child {
+  text-align: right; 
+  white-space: nowrap;
+}
+
+.info-container {
+  background-color: #f0f8ff; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Skills Section */
+
+.skills-heading{
+  /* display: inline; */
+  margin-top: 20px;
+  text-align: center;
+}
+.skills-row {
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin: 1px auto;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.skill {
+  background-color: #e0f0ff;
+  color: #0077cc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.progress-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.progress-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1e1e2f;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
+}
+
+.progress-container ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.progress-container li {
+  margin: 5px;
+}
+
+
+/* Resume Buttons */
+.resume-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+
+.btn-download {
+  background-color: #28a745;
+}
+
+.btn-download:hover {
+  background-color: #1e7e34;
+}
+
+/* About Content (Optional for images) */
+.about-content {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+}

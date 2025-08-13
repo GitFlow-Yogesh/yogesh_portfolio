@@ -1,0 +1,44 @@
+.hireme-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .hireme-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hireme-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .social-links {
+    margin: 20px 0;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0073b1; /* LinkedIn Blue */
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #0073b1;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
