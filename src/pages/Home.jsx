@@ -75,6 +75,29 @@ function Home() {
               <Link to="/projects/project2" className="btn">More Details</Link>
             </div>
           </div>
+          {/* Project 3 */}
+          <div className="project-card alt-bg">
+            <h3>Weather App</h3>
+            <small className="tagline">Real-Time Weather Forecast at Your Fingertips</small>
+            <p>
+              The Weather App provides live weather updates for any city worldwide.
+              It displays temperature, humidity, wind speed, pressure, visibility,
+              and sunrise/sunset times. Users can view hourly and 5-day forecasts,
+              search for locations instantly, and enjoy a clean, responsive UI.
+            </p>
+            <div className="project-buttons">
+              <a
+                href="https://weather-topaz-one.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                Go to Project
+              </a>
+              <Link to="/projects/project3" className="btn">More Details</Link>
+            </div>
+          </div>
+
         </div>
       </section>
 
