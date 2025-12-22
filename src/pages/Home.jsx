@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import myPhoto from "../assets/photo_updated.jpeg";
+import myPhoto from "../assets/photo_updated.png";
 
 function Home() {
   return (
