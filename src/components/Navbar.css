@@ -1,33 +1,70 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 24px;
-    background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: rgba(10, 10, 14, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--text-main) !important;
+  letter-spacing: 0.5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: var(--text-main);
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.logo::after {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 20px;
   }
-  
+
   .navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+    margin-left: 15px;
+    font-size: 0.9rem;
   }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 20px;
-  }
-  @media (max-width: 414px) {
-    .navbar{
-      padding: 12px ;
-    }
-    .navbar a {
-      margin-left: 10px;
-    }
-    .home{
-      display: none;
-    }
-  }
+}

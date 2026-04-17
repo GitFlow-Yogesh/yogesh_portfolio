@@ -1,44 +1,301 @@
-.hireme-container {
-    text-align: center;
-    padding: 40px;
+/* =============================================
+   HIRE ME PAGE — PREMIUM DARK THEME
+   ============================================= */
+
+.hireme-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Hero */
+.hire-hero {
+  text-align: center;
+  padding: 60px 0 50px;
+}
+
+.hire-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.hire-subtitle {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Section Label (reuse) */
+.hireme-page .section-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hireme-page .section-label::before,
+.hireme-page .section-label::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.hireme-page .section-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--text-main);
+}
+
+/* Offer Grid */
+.offer-section {
+  margin-bottom: 60px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.offer-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+  border-color: rgba(59, 130, 246, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.offer-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.offer-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.offer-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* Social Cards */
+.social-section {
+  margin-bottom: 60px;
+}
+
+.social-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px 28px;
+  min-width: 240px;
+  transition: all 0.3s ease;
+  color: var(--text-main);
+}
+
+.social-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.social-card.github:hover {
+  border-color: rgba(255,255,255,0.25);
+}
+
+.social-card.linkedin:hover {
+  border-color: rgba(10, 102, 194, 0.4);
+  color: #0a66c2;
+}
+
+.social-card.leetcode:hover {
+  border-color: rgba(255, 161, 22, 0.4);
+  color: #ffa116;
+}
+
+.social-card svg {
+  flex-shrink: 0;
+}
+
+.social-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.social-handle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Contact Cards */
+.contact-section {
+  margin-bottom: 60px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 20px 24px;
+  transition: all 0.3s ease;
+  color: var(--text-main);
+}
+
+.contact-card:hover {
+  border-color: rgba(59, 130, 246, 0.25);
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.contact-icon-wrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 12px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.contact-type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.contact-value {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.contact-arrow {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-arrow {
+  transform: translateX(4px);
+  color: var(--accent-color);
+}
+
+/* CTA */
+.hire-cta {
+  margin-bottom: 20px;
+}
+
+.hire-cta-card {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.08));
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hire-cta-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.hire-cta-card p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 28px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .hireme-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+
+  .social-cards {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .hireme-container p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 20px;
+
+  .social-card {
+    width: 100%;
+    max-width: 340px;
   }
-  
-  .social-links {
-    margin: 20px 0;
+
+  .hire-hero h1 {
+    font-size: 2.2rem;
   }
-  
-  .social-links a {
-    margin: 0 15px;
-    color: #333;
-    transition: color 0.3s ease;
+
+  .hire-cta-card {
+    padding: 36px 20px;
   }
-  
-  .social-links a:hover {
-    color: #0073b1; /* LinkedIn Blue */
+
+  .hire-cta-card h2 {
+    font-size: 1.5rem;
   }
-  
-  .contact-info p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-  }
-  
-  .contact-info a {
-    text-decoration: none;
-    color: #0073b1;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
+}

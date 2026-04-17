@@ -1,212 +1,289 @@
+/* =============================================
+   PROJECT DETAILS PAGE — PREMIUM DARK THEME
+   ============================================= */
 
-   .pd-project-details-container {
-    font-family: "Poppins", sans-serif;
-    color: #1e293b;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .pd-hero {
-    text-align: center;
-  }
-  
+.pd-project-details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* ===== Hero Section ===== */
+.pd-hero {
+  text-align: center;
+  padding: 50px 0 40px;
+}
+
+.pd-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4f8ff7, #a78bfa, #ec4899);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.pd-hero p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.pd-hero-image {
+  margin-top: 2rem;
+  max-width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.pd-hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Section Titles ===== */
+.pd-project-details-container section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  border-left: 4px solid var(--accent-color);
+  padding-left: 14px;
+  margin-bottom: 1rem;
+}
+
+/* ===== About Section ===== */
+.pd-about {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 28px 30px;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+.pd-about p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ===== Features + Tech Side-by-Side ===== */
+.section-for-both {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.pd-features {
+  flex: 1 1 58%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 28px 30px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.pd-features h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(79, 143, 247, 0.3);
+  text-align: center;
+}
+
+.pd-features ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.pd-features li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.pd-features li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+/* ===== Tech Stack Tags ===== */
+.pd-tech-stack {
+  flex: 1 1 30%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.pd-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pd-tech-tags span {
+  background: rgba(79, 143, 247, 0.08);
+  border: 1px solid rgba(79, 143, 247, 0.18);
+  color: #60a5fa;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pd-tech-tags span:hover {
+  background: rgba(79, 143, 247, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ===== Future Updates ===== */
+.future {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* ===== Links & Buttons ===== */
+.pd-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 28px 30px;
+  border-radius: 16px;
+  margin-top: 24px;
+  gap: 1rem;
+}
+
+.pd-links h2 {
+  font-size: 1.4rem;
+  color: var(--text-main);
+  margin: 0;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 14px;
+}
+
+.pd-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.pd-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: var(--accent-color);
+  color: white;
+  padding: 11px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all 0.3s ease;
+}
+
+.pd-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 143, 247, 0.3);
+}
+
+.pd-btn svg {
+  font-size: 0.85rem;
+}
+
+/* ===== Back Link ===== */
+.pd-back-link-section {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pd-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: gap 0.3s ease;
+}
+
+.pd-back-link:hover {
+  gap: 10px;
+}
+
+/* ===== Gallery ===== */
+.pd-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.pd-gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pd-gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
   .pd-hero h1 {
-    font-size: 27px;
-    color: #0f172a;
+    font-size: 2rem;
   }
-  
+
   .pd-hero p {
-    font-size: 1.2rem;
-    color: #475569;
-    margin-bottom: 30px;
+    font-size: 1rem;
   }
-  
-  .pd-hero-image {
-    margin-top: 2rem;
-    max-width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease;
-  }
-  
-  .pd-hero-image:hover {
-    transform: scale(1.02);
-  }
-  
-  /* ===== Section Titles ===== */
-  section h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #0f172a;
-    border-left: 5px solid #4f46e5;
-    padding-left: 0.6rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* ===== About Section ===== */
-  .pd-about {
-    background: #f8fafc;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-  }
+
   .section-for-both {
-    display: flex;
-    gap: 3rem; 
-    flex-wrap: wrap;
-    margin-top: 30px;
+    flex-direction: column;
   }
-  .pd-features {
-    flex: 0 0 65%; 
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  
-  .pd-features h1{
-    font-size: 1.8rem;
-    color: #1e1e2f;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 5px;
-    text-align: center;
-  }
- 
-  .pd-features ul {
-    list-style: none;
-    padding-left: 20px;
-    line-height: 1.6;
-  }
-  
-  .pd-features li {
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  
-  /* ===== Tech Stack Tags ===== */
-  .pd-tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-  
-  .pd-tech-tags span {
-    background: #e0f2fe;
-    color: #0369a1;
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
+
+  .pd-features,
   .pd-tech-stack {
-    flex: 0 0 30%; 
-    background-color: #f0f8ff;
-    padding: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
+    flex: 1 1 100%;
   }
-  /* ===== Gallery ===== */
-  .pd-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
-  }
-  
-  .pd-gallery-grid img {
-    width: 100%;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-  }
-  
-  .pd-gallery-grid img:hover {
-    transform: scale(1.03);
-  }
-  
-  /* ===== Links & Buttons ===== */
+
   .pd-links {
-    display: flex;
-    align-items: center; /* vertically center heading and buttons */
-    justify-content: space-between; /* heading on left, buttons on right */
-    flex-wrap: wrap; /* wrap on small screens */
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
-    gap: 1rem; /* spacing if wrapping occurs */
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .pd-links h2 {
-    font-size: 1.8rem;
-    color: #1e1e2f;
-    margin: 0; /* remove default margin */
-  }
-  
+
   .pd-buttons {
-    display: flex;
-    width: 35%;
-    gap: 10%; /* spacing between the buttons */
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
-  
-  .pd-btn {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* gap between text and icon */
-    text-decoration: none;
-    background-color: #0077cc;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .pd-btn:hover {
-    background-color: #005fa3;
-  }
-  
-  .pd-btn svg {
-    font-size: 0.9rem;
-  }
-  
-  
-  .future{
-    text-align: center;
-    margin-top: 20px;
-    /* width: fit-content; */
-  }
-  
-  /* ===== Back Link ===== */
-  .pd-back-link-section {
-    margin-top: 3rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .pd-back-link {
-    text-decoration: none;
-    color: #4f46e5;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  
-  .pd-back-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* ===== Responsive ===== */
-  @media (max-width: 768px) {
-    .pd-hero h1 {
-      font-size: 2rem;
-    }
-    .pd-hero p {
-      font-size: 1rem;
-    }
-  }
-  
+}
